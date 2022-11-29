@@ -1,0 +1,39 @@
+{
+  "name": "react-graphs-svg",
+  "version": "0.1.0",
+  "description": "Graphs and charts for react in SVG",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schemburkar/react-graphs-svg.git"
+  },
+  "keywords": [
+    "charts",
+    "graphs",
+    "svg",
+    "react"
+  ],
+  "author": "https://github.com/schemburkar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schemburkar/react-graphs-svg/issues"
+  },
+  "homepage": "https://github.com/schemburkar/react-graphs-svg#readme",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "tailwindcss": "3.2.4"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "typescript": "^4.9.3",
+    "@types/react": "18.0.25",
+    "tailwindcss": "3.2.4"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}
