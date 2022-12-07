@@ -1,6 +1,6 @@
 import { ChartComponentClassName } from "../types/ChartProps";
 
-export const defaultClassNames: ChartComponentClassName = {
+const defaultClassNames: ChartComponentClassName = {
     axis: {
         line: 'stroke-black',
         text: 'text-black text-[0.2rem]',
@@ -17,7 +17,7 @@ export const defaultClassNames: ChartComponentClassName = {
 };
 
 
-export const darkThemeClassNames: ChartComponentClassName = {
+const darkThemeClassNames: ChartComponentClassName = {
     axis: {
         line: 'stroke-white',
         text: 'text-white text-[0.2rem]',
@@ -32,4 +32,3 @@ export const darkThemeClassNames: ChartComponentClassName = {
         ytext: "hidden group-hover:block text-[0.2rem] text-white"
     }
 };
-

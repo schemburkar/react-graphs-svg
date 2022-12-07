@@ -1,7 +1,7 @@
 import { AxisParameters, ChartComponentClassName, ChartCoordinates, Data, XY } from "../types/ChartProps";
 import { applyMargins, valueof, textof } from "../helpers/helpers";
 
-export const LinePlot = ({ data, axis, chart, classNames }: LinePlotProps) => {
+export const LinePlot = ({ data, axis, chart }: LinePlotProps) => {
 
     const { min: [minx, miny], max: [maxx, maxy], size: [sx, sy], margins: { margin: [mx, my], startOffset: [ox, oy] } } = axis;
 
@@ -22,20 +22,20 @@ export const LinePlot = ({ data, axis, chart, classNames }: LinePlotProps) => {
 
     const pointsPath = points.map(p => `${p.cx},${p.cy}`).join(' ');
     return <>
-        <polyline points={pointsPath} className={classNames?.polyline} strokeLinejoin="round" />
+        <polyline points={pointsPath} className={"fill-none stroke-black dark:stroke-white line-chart chart-plot chart-polyline"} strokeLinejoin="round" />
         {points.map(({ cx, cy }, index) => {
-            return <circle key={index} className={classNames?.plot?.marker} cx={cx} cy={cy} r={0.5} />
+            return <circle key={index} className="fill-slate-400 line-chart chart-plot plot-marker" cx={cx} cy={cy} r={0.5} />
 
 
         })}
 
         {points.map(({ cx, cy, textx, texty }, index) => {
-            return <g className="group" key={index}>
+            return <g className="line-chart chart-plot plot-group group" key={index}>
                 <circle className="fill-transparent stroke-none" cx={cx} cy={cy} r={2} />
                 <g>
-                    <rect className={classNames?.plot?.tooltip} x={cx + 1} y={cy - 2} width={15} height={10} />
-                    <text className={classNames?.plot?.xtext} x={cx + 2} y={cy + 2}>{textx}</text>
-                    <text className={classNames?.plot?.ytext} x={cx + 2} y={cy + 6}>{texty}</text>
+                    <rect className="hidden group-hover:block fill-slate-300 dark:fill-gray-800 line-chart chart-plot plot-tooltip" x={cx + 1} y={cy - 2} width={15} height={10} />
+                    <text className="hidden group-hover:block text-[0.2rem] fill-black text-black dark:fill-white dark:text-white line-chart chart-plot plot-x-text" x={cx + 2} y={cy + 2}>{textx}</text>
+                    <text className="hidden group-hover:block text-[0.2rem] fill-black text-black dark:fill-white dark:text-white line-chart chart-plot plot-y-text" x={cx + 2} y={cy + 6}>{texty}</text>
                 </g>
             </g>
 
@@ -47,6 +47,4 @@ type LinePlotProps = {
     axis: AxisParameters;
     data: XY<Data>[];
     chart: ChartCoordinates;
-    classNames?: ChartComponentClassName
-
 };

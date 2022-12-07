@@ -4,6 +4,4 @@ export type AxisProps = {
     items: Data[];
     chart: ChartCoordinates;
     axis: AxisParameters;
-    classNames?: ChartComponentClassName
-
 };

@@ -7,7 +7,6 @@ export type ChartProps = {
     axis: XY<Data[]>;
     size: XY;
     margins: Margins;
-    classNames?: ChartComponentClassName
 };
 export type ChartComponentClassName = {
     chartArea?: string
