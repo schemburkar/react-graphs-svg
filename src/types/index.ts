@@ -1,0 +1,5 @@
+export { BaseChartProps, ChartProps } from './ChartProps'
+export { XY } from './XY'
+export { Data } from './Data'
+export { Margins } from './Margins'
+export { DataSeries, MultiDataSeries } from './DataSeries'

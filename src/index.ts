@@ -1,7 +1,6 @@
-import { LineChart } from "./components";
-import { getDateItems } from './helpers/getDateItems'
-import { getNumericItems } from './helpers/getNumericItems'
+import { LineChart, BarChart, StackedBarChart } from "./components";
+import { getDateItems, getNumericItems } from './helpers'
 
 
-export { LineChart, getDateItems ,getNumericItems};
+export { LineChart, BarChart, StackedBarChart, getDateItems, getNumericItems };
 

@@ -1,6 +1,6 @@
 {
   "name": "react-graphs-svg",
-  "version": "0.1.0-alpha-2",
+  "version": "0.1.0-alpha-4",
   "description": "Graphs and charts for react in SVG",
   "main": "dist/index.js",
   "scripts": {
@@ -39,6 +39,7 @@
   },
   "files": [
     "dist",
-    "src"
+    "src",
+    "README.md"
   ]
 }

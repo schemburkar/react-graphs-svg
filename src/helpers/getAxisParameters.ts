@@ -1,9 +1,10 @@
-import { AxisParameters, ChartProps } from "../types/ChartProps";
+import { BaseChartProps } from "../types";
+import { AxisParameters } from "../components/shared/AxisParameters";
 import { value } from "./helpers";
 
-export const getAxisParameters = (chart: ChartProps): AxisParameters => {
+export const getAxisParameters = (chart: BaseChartProps): AxisParameters => {
 
-    const { axis: [xaxis, yaxis], data, margins, size: [x2, y1] } = chart;
+    const { axis: [xaxis, yaxis], margins, size: [x2, y1] } = chart;
 
     const { margin: [marginx, marginy], startOffset: [ox, oy] } = margins;
 
@@ -20,3 +21,4 @@ export const getAxisParameters = (chart: ChartProps): AxisParameters => {
 
     return axisParams;
 };
+
