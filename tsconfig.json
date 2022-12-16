@@ -13,4 +13,5 @@
     "declarationMap": true,
     "lib": ["ES2019"]
   },
+  "include": ["./src"]
 }

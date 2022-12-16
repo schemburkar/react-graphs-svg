@@ -1,6 +1,6 @@
 {
   "name": "react-graphs-svg",
-  "version": "0.1.0-alpha-5",
+  "version": "0.1.0-alpha-6",
   "description": "Graphs and charts for react in SVG",
   "main": "dist/index.js",
   "scripts": {
