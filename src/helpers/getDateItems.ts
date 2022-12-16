@@ -15,6 +15,8 @@ export const getDateItems = (start: Date, end: Date, interval: "month" | "day", 
                 break;
         }
     }
-
+    if (items[items.length - 1] < end) {
+        items.push(new Date(initial));
+    }
     return items;
 };

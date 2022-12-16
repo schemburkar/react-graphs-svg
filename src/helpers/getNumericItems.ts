@@ -7,6 +7,8 @@ export const getNumericItems = (start: number, end: number, intervalValue: numbe
         items.push(initial);
         initial = initial + intervalValue;
     }
-    items.push(initial);
+    if (items[items.length - 1] < end) {
+        items.push(initial);
+    }
     return items;
 };

@@ -16,7 +16,6 @@ npm install react-graphs-svg
 
 ### Basic Usage
 
-This is a ESM only package
 ```jsx
 import { LineChart } from 'react-graphs-svg'
 
@@ -37,6 +36,6 @@ This package supports usage from Typescript.
 
 ### Demo Site
 
-react-graphs-svg-demo.vercel.app
+Visit Demo site for detailed sample code: [react-graphs-svg-demo.vercel.app ](https://react-graphs-svg-demo.vercel.app)
 
 
